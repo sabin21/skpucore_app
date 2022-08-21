@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.header-wrap{
+    @apply absolute w-full h-[110px] top-0 left-0 z-50 bg-white;
+    &.trans {
+       @apply border-b border-[rgba(255,255,255,0.15)] bg-transparent;
+    }
+    &.a-header {
+        @apply relative ;
+    }
+    &.b-header {
+        @apply fixed bg-transparent ;
+    }
+}
+.header-nav {
+    @apply relative w-full h-[110px] flex items-center px-10 z-50 m-auto left-0 right-0 max-w-[1600px];
+    &.full-width {
+        @apply max-w-full ;
+    }
+    .logo-wrap{
+        @apply block w-[130px] h-[62px] bg-cover bg-center bg-no-repeat bg-[url(../img/draft/sk_pucore_logo_color.svg)];
+    }
+    .menu-wrap {
+        @apply  flex ml-10;
+        a{
+            @apply inline-block text-slate-800 px-6 font-bold text-lg ;
+        }
+        
+    }
+    .right-block {
+        @apply absolute w-[184px] h-[40px] m-auto top-0 bottom-0 right-8;
+    }
+    &.trans {
+        @apply bg-transparent ;
+        .logo-wrap{
+            @apply bg-[url(../img/draft/sk_pucore_logo_white.svg)] ;
+        }
+        .menu-wrap{
+            a{
+                @apply text-white ;
+            }
+        }
+    }
+}
+.section { 
+    @apply w-full h-screen min-h-[800px] ;
+}
+
+//--------------------------

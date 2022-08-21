@@ -1,0 +1,14 @@
+
+
+.alert {
+    @apply flex p-4 mb-4 text-sm rounded-lg ;
+    &.blue { @apply text-blue-700 bg-blue-100 ; }
+    &.red { @apply text-red-700 bg-red-100 ; }
+    &.green { @apply text-green-700 bg-green-100 ; }
+    &.yellow { @apply text-yellow-700 bg-yellow-100 ; }
+    &.withicon{
+        svg {
+            @apply inline flex-shrink-0 mr-3 w-5 h-5 ;
+        }
+    }
+}

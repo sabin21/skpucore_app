@@ -1,0 +1,13 @@
+/* Button ----------------- */
+
+.btn{
+    @apply font-medium rounded-md px-5 py-2.5 mr-2 mb-2 tracking-normal focus:outline-none ; 
+    &.primary {
+        @apply  text-white bg-primary-500 hover:bg-primary-600 focus:ring-4 focus:ring-primary-300 ;
+    }
+    &.small { @apply px-4 py-2 text-sm ; }
+    &.tiny { @apply px-2.5 py-1.5 text-xs ; }
+    &.pill { @apply rounded-[60px] px-6; }
+    &.pill-small { @apply rounded-[60px] px-5 py-2 text-sm ;}
+    &.pill-tiny { @apply rounded-[60px] px-4 py-1.5 text-xs ;}
+}

@@ -1,0 +1,9 @@
+
+.header-nav {
+    &.type-1{
+        @apply flex items-center justify-between flex-wrap h-24 bg-slate-700 px-10;
+        .logo-wrap{
+            @apply flex items-center flex-shrink-0 text-white mr-6;
+        }
+    }   
+}
