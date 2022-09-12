@@ -3,11 +3,12 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack');
 const paths = require('./paths')
-const pages = [  
+const pages = [
+  "index","draft_list",
   "ui_common","news_list","sites","contact",
   "form_test","related","news_view","publication",
   "product_flow","product_esg","product_general","product_general_content",
-  "index","home",
+  "home",
   //"concept",
   //"draft_a_1","draft_b_1",'draft_c_1','draft_d_1',
   //'guide_color','guide_typo','guide_layout','guide_spacing',
