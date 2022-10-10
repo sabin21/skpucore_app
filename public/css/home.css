@@ -4,6 +4,7 @@
   background-image: url(../img/type_2/btn_top.png); background-repeat: no-repeat;
   right: 32px; bottom: 60px; z-index: 200; opacity: 0; cursor: pointer; 
 }
+
 //------------------------------
 .hero-wrap {
   @apply relative w-full h-screen overflow-hidden bg-slate-800 ;
@@ -117,7 +118,7 @@
 .products-wrap{
     @apply relative w-full max-w-[1920px] mx-auto ;
     .products-swiper-container{
-        @apply w-full h-[300px] lg:h-[700px] ;
+        @apply w-full h-[300px] lg:h-[600px] ;
         .swiper-slide {
             @apply relative w-full lg:w-[820px] transition-all duration-700 overflow-hidden ;
             .inner-wrap{
@@ -339,5 +340,16 @@
   }
   video {
       @apply absolute w-full h-full object-cover object-center ;
+  }
+}
+
+//-------------------------
+.trigger-wrap{
+  @apply block absolute w-8 h-full z-50 right-0 top-0; 
+  .trigger{
+    @apply block absolute w-full;
+    &.trigger-1 { @apply h-[80vh] top-[20vh] bg-red-500; }
+    &.trigger-2 { @apply h-[500px] top-[calc(100vh+400px)] bg-yellow-400; }
+    &.trigger-news { @apply h-[500px] top-[calc(100vh+400px)] bg-yellow-400; }
   }
 }
